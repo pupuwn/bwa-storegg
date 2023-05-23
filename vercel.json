@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "views": "views/admin/dashboard/view_dashboard.ejs",
+      "src": "app.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "views": "/(.*)",
-      "dest": "views/admin/dashboard/view_dashboard.ejs"
+      "src": "/(.*)",
+      "dest": "app.js"
     }
   ]
 }
